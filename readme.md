@@ -15,14 +15,12 @@ A container is a runtime instance of an image--what the image becomes in memory 
 docker <br/>
 docker container --help <br/>
 ```
-<br/>
 ## Display Docker version and info <br/>
 ```
 docker --version <br/>
 docker version <br/>
 docker info <br/>
 ```
-<br/>
 ## Execute Docker image <br/>
 ```
 docker run hello-world <br/>
@@ -68,7 +66,6 @@ Services are really just “containers in production..<br/>
 ```
 ## Part 3 ## 
 A single container running in a service is called a task. <br/> 
-<br/>
 ```
 docker stack ls                                            # List stacks or apps <br/>
 docker stack deploy -c <composefile> <appname>  # Run the specified Compose file <br/>
