@@ -26,7 +26,6 @@ docker info <br/>
 ## Execute Docker image <br/>
 ```
 docker run hello-world <br/>
-<br/>
 ```
 ## List Docker images <br/>
 ```
@@ -37,11 +36,11 @@ docker image ls <br/>
 docker container ls <br/>
 docker container ls --all <br/>
 docker container ls -aq <br/>
-<br/>
 Invoke-WebRequest -uri "http://www.google.nl" -UseBasicParsing	 <br/>
 docker container stop <Container NAME or ID> <br/>
-<br/>
+```
 ## Part 2  ##
+```
 docker build -t friendlyhello .  # Create image using this directory's Dockerfile<br/>
 docker run -p 4000:80 friendlyhello  # Run "friendlyhello" mapping port 4000 to 80<br/>
 docker run -d -p 4000:80 friendlyhello         # Same thing, but in detached mode<br/>
@@ -60,12 +59,14 @@ docker push username/repository:tag            # Upload tagged image to registry
 docker run username/repository:tag                   # Run image from a registry <br/>
 ```
 <br/>
+```
 Services are really just “containers in production..<br/>
+```
 <br/>
 ```
 // type NUL > docker-compose.yml  create folder in windows powershell <br/>
 ```
-## Part 3 ## <br/>
+## Part 3 ## 
 A single container running in a service is called a task. <br/> 
 <br/>
 ```
