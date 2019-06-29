@@ -11,21 +11,29 @@ A container is a runtime instance of an image--what the image becomes in memory 
  docker container ls --all : List the hello-world container (spawned by the image) which exits after displaying its message. If it were still running, you would not need the --all option
  
  ## List Docker CLI commands <br/>
+ ```
 docker <br/>
 docker container --help <br/>
+```
 <br/>
 ## Display Docker version and info <br/>
+```
 docker --version <br/>
 docker version <br/>
 docker info <br/>
+```
 <br/>
 ## Execute Docker image <br/>
+```
 docker run hello-world <br/>
 <br/>
+```
 ## List Docker images <br/>
+```
 docker image ls <br/>
-
+```
 ## List Docker containers (running, all, all in quiet mode)
+```
 docker container ls <br/>
 docker container ls --all <br/>
 docker container ls -aq <br/>
@@ -50,13 +58,17 @@ docker login             # Log in this CLI session using your Docker credentials
 docker tag <image> username/repository:tag  # Tag <image> for upload to registry <br/>
 docker push username/repository:tag            # Upload tagged image to registry <br/>
 docker run username/repository:tag                   # Run image from a registry <br/>
+```
 <br/>
 Services are really just “containers in production..<br/>
 <br/>
+```
 // type NUL > docker-compose.yml  create folder in windows powershell <br/>
+```
 ## Part 3 ## <br/>
 A single container running in a service is called a task. <br/> 
 <br/>
+```
 docker stack ls                                            # List stacks or apps <br/>
 docker stack deploy -c <composefile> <appname>  # Run the specified Compose file <br/>
 docker service ls                 # List running services associated with an app <br/>
@@ -65,3 +77,4 @@ docker inspect <task or container>                   # Inspect task or container
 docker container ls -q                                      # List container IDs <br/>
 docker stack rm <appname>                             # Tear down an application <br/>
 docker swarm leave --force      # Take down a single node swarm from the manager <br/>
+```
