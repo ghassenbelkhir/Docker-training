@@ -57,15 +57,14 @@ docker push username/repository:tag            # Upload tagged image to registry
 docker run username/repository:tag                   # Run image from a registry 
 ```
 <br/>
+
+Services are really just “containers in production..
+
 ```
-Services are really just “containers in production..<br/>
-```
-<br/>
-```
-// type NUL > docker-compose.yml  create folder in windows powershell <br/>
+type NUL > docker-compose.yml  create folder in windows powershell 
 ```
 ## Part 3 ## 
-A single container running in a service is called a task. <br/> 
+A single container running in a service is called a task.
 ```
 docker stack ls                                            # List stacks or apps 
 docker stack deploy -c <composefile> <appname>  # Run the specified Compose file 
